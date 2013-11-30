@@ -61,6 +61,10 @@
       margin-top: .5em;
     }
     .lg-center{
+      -webkit-transition: opacity 1000ms ease;
+      -moz-transition: opacity 1000ms ease;
+      -o-transition: opacity 1000ms ease;
+      transition: opacity 1000ms ease;
       text-align: center;
       opacity: .8;
       position: absolute;
@@ -69,6 +73,9 @@
       margin-left: -150px;
       img{
         height: 56px;
+      }
+      &:hover{
+        opacity: 1;
       }
     }
     .lg-right{
