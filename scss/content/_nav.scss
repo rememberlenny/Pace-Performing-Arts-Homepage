@@ -1,0 +1,67 @@
+@import '../settings';
+
+.light{
+  .logo{
+    background:url('../images/pace-logo.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    width: 350px;
+    height: 117px;
+  }
+}
+.dark{
+  .logo{
+    background:url('../images/pace-logo-dark.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    width: 350px;
+    height: 117px;
+  }
+  .top-bar-container{
+    a{
+      color: white !important;
+    }
+  }
+}
+
+
+
+
+@media only screen and (min-width:40.063em){
+}
+@media only screen and (min-width:64.063em){
+  .light{
+    .top-bar-section .dropdown li a {
+      border-left: 4px solid transparent;
+      &:hover{
+        border-left: 4px solid $topbar-dropdown-link-color;
+      }
+    }
+  }
+  .dark{
+    .top-bar-section .dropdown li a {
+      border-left: 4px solid transparent;
+      &:hover{
+        border-left: 4px solid white;
+      }
+    }
+  }
+  .top-bar,
+  .top-bar-section{
+    margin-top: 1.3em;
+  }
+
+}
+@media only screen and (max-width:64.063em){
+
+  .top-bar-section{
+    display: none;
+  }
+
+}
+@media only screen and (min-width:90.063em){
+
+}
+@media only screen and (min-width:120.063em){
+
+}
