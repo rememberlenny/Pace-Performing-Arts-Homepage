@@ -2,12 +2,13 @@
   background: #181819;
   position:fixed;
   bottom: 0%;
-  height: 5em;
+  height: 8em;
   padding-top: .9em;
   width: 100%;
   color: white;
   font-weight: light;
   .phone{
+    line-height: 3.3;
     i{
       margin-right: .4em;
     }
@@ -17,6 +18,9 @@
       display: inline-block;
       font-weight: 500;
     }
+  }
+  .lg-right{
+    line-height: 4em;
   }
 }
 
@@ -72,7 +76,7 @@
       width: 300px;
       margin-left: -150px;
       img{
-        height: 56px;
+        height: 100px;
       }
       &:hover{
         opacity: 1;

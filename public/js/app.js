@@ -18,10 +18,6 @@
         $($('.main-container h2')[1]).removeClass('hidden');
         setTimeout(function(){
           $($('.main-container h2')[2]).removeClass('hidden');
-          setTimeout(function(){
-            $($('.main-container h2')[3]).removeClass('hidden');
-            setTimeout(function(){
-              $($('.main-container h2')[4]).removeClass('hidden');
 
                 // H1
                 setTimeout(function(){
@@ -36,8 +32,6 @@
                   }, 500);
                 }, 1000);
 
-            }, 170);
-          }, 200);
         }, 300);
       }, 400);
     }, 500);
