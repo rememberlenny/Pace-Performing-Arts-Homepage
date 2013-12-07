@@ -44,9 +44,10 @@
     $(document).on('click', '#play-video', function(){
       if( playing === false ){
         playing = true;
+        $('.video-player-contain').append(append);
         setTimeout(function(){
-          $('.video-player-contain').append(append);
-        }, 250);
+          $('#myModal').foundation('reveal', 'open');
+        }, 700);
       }
     });
     $(document).on('close', '[data-reveal]', function () {
