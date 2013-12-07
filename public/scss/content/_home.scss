@@ -39,17 +39,42 @@ html.avgrund-active{
     background: black;
   }
 }
-html.dark{
-  background: url('../images/dark-bg.jpg');
+.dark{
 }
 html.avgrund-active{
   &.light{
     background: black;
   }
 }
-html.light{
-  background: url('../images/light-bg.jpg');
+.full-bg{
+  background-size: cover !important;
+  background-position: center center;
+  background-repeat: no-repeat no-repeat;
+  position: fixed;
+  top: 0;
+  z-index:-1;
+  -webkit-transition: opacity 500ms ease;
+  -moz-transition: opacity 500ms ease;
+  -ms-transition: opacity 500ms ease;
+  -o-transition: opacity 500ms ease;
+  transition: opacity 500ms ease;
+  opacity:0;
 }
+
+.full-bg.visible{
+  opacity:1;
+}
+.full-bg.image1{
+  background-image: url('../images/light-bg.jpg');
+}
+.full-bg.image2{
+  background-image: url('../images/dark-bg.jpg');
+}
+
+
+#full-bg.image3{
+}
+
 html{
   height: 100%;
   background-repeat: no-repeat !important;
@@ -91,7 +116,8 @@ body{
 
 .light{
   .main-container{
-    h1{
+    h1,
+    h3{
       color: #343434;
     }
     h2{
@@ -115,8 +141,9 @@ body{
 }
 .dark{
   .main-container{
-    h1{
-      color: white;
+    h1,
+    h3{
+      color: #ededed;
     }
     h2{
       color: white;
@@ -200,7 +227,7 @@ body{
     background-repeat: no-repeat;
     background-size: 63%;
     background-position: 60% center;
-    background-color: transparent;
+    background-color: white;
     &.right-is{
       background: url('../images/playbutton.png') left center no-repeat #181819;
     }

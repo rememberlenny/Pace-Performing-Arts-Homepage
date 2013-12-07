@@ -74,6 +74,8 @@
         var contentTopMargin = contentArea *.3;
       }
       $('.content-main').css('margin-top', contentTopMargin);
+      $('.full-bg').width(windowWidth);
+      $('.full-bg').height(windowHeight);
       checkPosition();
 
       var actModalHeight = $('#myModal').height();
@@ -91,6 +93,28 @@
       $('body').fadeOut();
       setTimeout(300);
     });
+    var i = 0;
+    if($('.full-bg').length){
+      var slideCount = $('.full-bg').length -1;
+    }
+    // processSlides();
+    // function processSlides(){
+    //   setTimeout(function(){
+    //     if($('.full-bg').length > 1){
+    //       console.log(slideCount);
+    //       if(i === slideCount){
+    //         $($('.full-bg')[slideCount]).removeClass('visible');
+    //         $($('.full-bg')[0]).addClass('visible');
+    //         i = 0;
+    //       } else {
+    //         $($('.full-bg')[i]).removeClass('visible');
+    //         $($('.full-bg')[i+1]).addClass('visible');
+    //         i++;
+    //       }
+    //       processSlides();
+    //     }
+    //   }, 5000);
+    // }
   })();
 })(jQuery);
 
