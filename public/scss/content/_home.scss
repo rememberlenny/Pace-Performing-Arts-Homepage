@@ -1,9 +1,11 @@
 @import '../overrides/heading';
 @import '../settings';
 $container-width: 980px;
-
 #myModal{
   width: auto !important;
+}
+object,embed{
+  max-height: 420px;
 }
 button.close-reveal-modal{
   background-color: transparent!important;
@@ -25,7 +27,10 @@ button.close-reveal-modal{
     -o-transition: top 400ms ease;
     transition: top 400ms ease;
 }
-
+.reveal-modal{
+  background: #1b1b1b !important;
+  padding: .5em !important;
+}
 button:focus, .button:focus {
   background-color: #fff !important;
 }
@@ -139,19 +144,36 @@ body{
   width: 100%;
   margin: 0 auto;
 
+  h3{
+    -webkit-transition: all 1000ms ease;
+    -moz-transition: all 1000ms ease;
+    -o-transition: all 1000ms ease;
+    transition: all 1000ms ease;
+    font-family: "pf_din_text_comp_pro_lightRg","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+    &.hidden{
+      opacity:0;
+    }
+    font-size: 20px;
+    font-weight:300;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+  }
   h1{
+    span{
+      font-family: "pf_din_text_comp_pro_lightRg","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+    }
+
     -webkit-transition: all 1000ms ease;
     -moz-transition: all 1000ms ease;
     -o-transition: all 1000ms ease;
     transition: all 1000ms ease;
     &.hidden{
       opacity:0;
-      letter-spacing: .31em;
     }
-    font-size: 20px;
+    font-size: 30px;
     font-weight:300;
     text-transform: uppercase;
-    letter-spacing: .25em;
+    letter-spacing: 0.13em;
   }
   h2{
     -webkit-transition: all 1000ms ease;
@@ -171,12 +193,19 @@ body{
   }
   .button{
     font-family: $nav-font-family;
-    min-width: 140px;
+    width: 75px;
+    height: 75px;
+    border-radius: 100px;
+    background-image: url('../images/play-button.png');
+    background-repeat: no-repeat;
+    background-size: 63%;
+    background-position: 60% center;
+    background-color: transparent;
     &.right-is{
-      background: url('../images/playbutton.png') left center no-repeat;
+      background: url('../images/playbutton.png') left center no-repeat #181819;
     }
     &.left-is{
-      background: url('../images/playbutton-rev.png') right center no-repeat;
+      background: url('../images/playbutton-rev.png') right center no-repeat #181819;
     }
     -webkit-transition: opacity 1000ms ease, padding 500ms ease, background 250ms ease;
     -moz-transition: opacity 1000ms ease, padding 500ms ease, background 250ms ease;
@@ -188,13 +217,13 @@ body{
     span{
       display: none;
     }
+    &:focus{
+      box-shadow: none;
+      outline: none;
+    }
     &:hover{
-      &.right-is{
-        background: url('../images/playbutton.png')  #fff left center no-repeat;
-      }
-      &.left-is{
-        background: url('../images/playbutton-rev.png')  #fff right center no-repeat;
-      }
+      background-color: rgba(255,255,255,.6);
+      box-shadow: 0 0 30px rgba(255,255,255,.4);
       span{
         display: inline;
       }
@@ -203,8 +232,11 @@ body{
 }
 @media only screen and (min-width:40.063em){
   .main-container{
-      h1{
+      h1, h3{
         font-size: 20px;
+      }
+      h1{
+        font-size: 30px;
       }
       h2{
         font-size: 30px;
@@ -213,12 +245,15 @@ body{
 }
 @media only screen and (min-width:64.063em){
   .main-container{
-    h1{
+    h1, h3{
       font-size: 30px;
     }
     h2{
       font-size: 45px;
     }
+          h1{
+        font-size: 40px;
+      }
   }
 }
 @media only screen and (min-width:90.063em){
