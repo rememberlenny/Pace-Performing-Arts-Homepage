@@ -47,7 +47,7 @@
         $('.video-player-contain').append(append);
         setTimeout(function(){
           $('#myModal').foundation('reveal', 'open');
-        }, 700);
+        }, 200);
       }
     });
     $(document).on('close', '[data-reveal]', function () {
@@ -56,7 +56,6 @@
         $('.video-player-contain').html(' ');
       }, 250);
     });
-
   });
 
   (function checkPosition(){
@@ -116,5 +115,15 @@
     //   }, 5000);
     // }
   })();
+  cycleBackground();
+  function cycleBackground(){
+    setTimeout(function(){
+      $('.full-bg').css('z-index', -2);
+      setTimeout(function(){
+        $('.full-bg').css('z-index', -1);
+      }, 250);
+      cycleBackground();
+    }, 500);
+  }
+  cycleBackground();
 })(jQuery);
-
