@@ -2,16 +2,6 @@
 @import '../settings';
 $container-width: 980px;
 #myModal{
-  width: auto !important;
-}
-object,embed{
-  max-height: 420px;
-}
-button.close-reveal-modal{
-  background-color: transparent!important;
-  margin: 0em!important;
-  padding: 0em!important;
-}
 .js{
   .top-bar-container, .footer{
     opacity: 0;
@@ -34,7 +24,17 @@ button.close-reveal-modal{
 button:focus, .button:focus {
   background-color: #fff !important;
 }
-html.avgrund-active{
+
+  width: auto !important;
+}
+object,embed{
+  max-height: 420px;
+}
+button.close-reveal-modal{
+  background-color: transparent!important;
+  margin: 0em!important;
+  padding: 0em!important;
+}html.avgrund-active{
   &.dark{
     background: black;
   }
@@ -87,6 +87,10 @@ html.avgrund-active{
   padding: 1em;
   display: inline;
  }
+ .button{
+  padding: .2em;
+  border-bottom: 2px solid #ddd;
+ }
  .inline-block{
   display: inline-block;
   h1, h2, h3{
@@ -110,6 +114,8 @@ html.avgrund-active{
   margin-top: 1em;
   max-width: 600px;
   border: 2px solid #333;
+  border-bottom: 50px solid #333;
+  border-top: 50px solid #333;
  }
  .ie-only{
   display: block;
