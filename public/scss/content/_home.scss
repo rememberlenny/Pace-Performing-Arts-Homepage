@@ -61,6 +61,17 @@ html.avgrund-active{
   opacity:0;
 }
 
+.ie-hack .right-off-canvas-toggle{
+  display: none;
+}
+
+.ie6, .ie7, .ie8{
+  .inner-wrap{
+    min-width: 1024px;
+    min-height: 768px;
+  }
+}
+
 .full-bg.visible{
   opacity:1;
 }
