@@ -47,6 +47,7 @@ html.avgrund-active{
   }
 }
 .full-bg{
+  background: url('../images/light-bg.jpg');
   background-size: cover !important;
   background-position: center center;
   background-repeat: no-repeat no-repeat;
@@ -61,10 +62,60 @@ html.avgrund-active{
   opacity:0;
 }
 
-.ie-hack .right-off-canvas-toggle{
+.ie9, .ie8, .ie7, .ie6{
+ .right-off-canvas-menu{
+    display: none;
+  }
+}
+.ie-only{
   display: none;
 }
-
+.ie-hack{
+ .off-canvas-wrap{
+  display: none;
+ }
+ .notice{
+  padding: .3em;
+  background: #eee;
+  border-bottom: 2px solid #ddd;
+ }
+ .callout{
+  margin-top: .3em;
+  margin-bottom: .3em;
+ }
+ .pane{
+  padding: 1em;
+  display: inline;
+ }
+ .inline-block{
+  display: inline-block;
+  h1, h2, h3{
+    display: inline-block;
+  }
+ }
+ label{
+  font-weight: bold;
+  text-decoration: underline;
+ }
+ ul{
+  li{
+    display: inline;
+    list-style: none;
+  }
+ }
+ .purpose{
+  font-weight: bold;
+ }
+ img{
+  margin-top: 1em;
+  max-width: 600px;
+  border: 2px solid #333;
+ }
+ .ie-only{
+  display: block;
+  text-align: center;
+ }
+}
 .ie6, .ie7, .ie8{
   .inner-wrap{
     min-width: 1024px;
