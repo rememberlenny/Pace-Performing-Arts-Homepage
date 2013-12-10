@@ -65,10 +65,10 @@ html.avgrund-active{
   opacity:1;
 }
 .full-bg.image1{
-  background-image: url('../images/light-bg.jpg');
+  background-image: url('https://s3.amazonaws.com/LKBG-TG/pace/images/light-bg.jpg');
 }
 .full-bg.image2{
-  background-image: url('../images/dark-bg.jpg');
+  background-image: url('https://s3.amazonaws.com/LKBG-TG/pace/images/dark-bg.jpg');
 }
 
 
@@ -127,12 +127,12 @@ body{
       border: 2px solid #333;
       color: #333;
       &.right-is:hover{
-        background: url('../images/playbutton.png')  #fff left center no-repeat;
+        background: url('https://s3.amazonaws.com/LKBG-TG/pace/images/playbutton.png')  #fff left center no-repeat;
         border: 3px solid white;
         color: #333;
       }
       &.left-is:hover{
-        background: url('../images/playbutton-rev.png')  #fff right center no-repeat;
+        background: url('https://s3.amazonaws.com/LKBG-TG/pace/images/playbutton-rev.png')  #fff right center no-repeat;
         border: 2px solid white;
         color: #333;
       }
@@ -152,12 +152,12 @@ body{
       border: 2px solid #fff;
       color: #fff;
       &.right-is:hover{
-        background: url('../images/playbutton.png')  #fff left center no-repeat;
+        background: url('https://s3.amazonaws.com/LKBG-TG/pace/images/playbutton.png')  #fff left center no-repeat;
         border: 3px solid white;
         color: #333;
       }
       &.left-is:hover{
-        background: url('../images/playbutton-rev.png')  #fff right center no-repeat;
+        background: url('https://s3.amazonaws.com/LKBG-TG/pace/images/playbutton-rev.png')  #fff right center no-repeat;
         border: 2px solid white;
         color: #333;
       }
@@ -223,16 +223,16 @@ body{
     width: 75px;
     height: 75px;
     border-radius: 100px;
-    background-image: url('../images/play-button.png');
+    background-image: url('https://s3.amazonaws.com/LKBG-TG/pace/images/play-button.png');
     background-repeat: no-repeat;
     background-size: 63%;
     background-position: 60% center;
     background-color: white;
     &.right-is{
-      background: url('../images/playbutton.png') left center no-repeat #181819;
+      background: url('https://s3.amazonaws.com/LKBG-TG/pace/images/playbutton.png') left center no-repeat #181819;
     }
     &.left-is{
-      background: url('../images/playbutton-rev.png') right center no-repeat #181819;
+      background: url('https://s3.amazonaws.com/LKBG-TG/pace/images/playbutton-rev.png') right center no-repeat #181819;
     }
     -webkit-transition: opacity 1000ms ease, padding 500ms ease, background 250ms ease;
     -moz-transition: opacity 1000ms ease, padding 500ms ease, background 250ms ease;
